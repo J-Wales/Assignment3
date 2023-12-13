@@ -5,7 +5,9 @@
 var submitButton = document.getElementById('submit-button');
 
 function changeContent() {
-    document.getElementById('contact-page').innerHTML='Thank you for your message';
+    let msg = document.getElementById('contact-page');
+    msg.innerHTML='<p>Thank you for your message</p>';
+    msg.classList.add('large-text')
 }
 
 submitButton.addEventListener('click',changeContent);

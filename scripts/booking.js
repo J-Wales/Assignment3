@@ -3,7 +3,6 @@
 // Do any of these variables need to be initialized when the page is loaded? 
 // When do they need to be reset or updated?
 var costPerDay= 0;
-
 var dayCounter = 0;
 
 
@@ -43,7 +42,8 @@ function clearDays() {
     wed.classList.remove('clicked');
     thu.classList.remove('clicked');
     fri.classList.remove('clicked');
-    document.getElementById('calculated-cost').innerHTML='0';
+    // document.getElementById('calculated-cost').innerHTML='0';
+    calculate()
 }
 
 clearButton.addEventListener('click',clearDays);
