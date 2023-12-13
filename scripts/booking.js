@@ -43,7 +43,7 @@ function clearDays() {
     thu.classList.remove('clicked');
     fri.classList.remove('clicked');
     // document.getElementById('calculated-cost').innerHTML='0';
-    calculate()
+    calculate();
 }
 
 clearButton.addEventListener('click',clearDays);
